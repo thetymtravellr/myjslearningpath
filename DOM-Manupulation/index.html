@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="open">
+      <button class="btn open-btn">Want To Post?</button>
+    </div>
+    <main>
+      <div class="post-box hidden">
+        <h2>Create Post</h2>
+        <hr style="border: 1px solid grey" />
+        <div class="post-item">
+          <img src="66_Green.jpg" alt="" />
+          <div class="post-details">
+            <p>Robiul Hasan</p>
+            <select name="privacy" id="">
+              <option value="public">Public</option>
+              <option value="friends">Friends</option>
+              <option value="onlyme">Only Me</option>
+            </select>
+          </div>
+        </div>
+        <textarea
+          name="post"
+          id="Post"
+          cols="40"
+          rows="10"
+          placeholder="What's On Your Mind?"
+        ></textarea>
+        <div class="share-btn">
+          <button class="share">Share</button>
+        </div>
+      </div>
+    </main>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
